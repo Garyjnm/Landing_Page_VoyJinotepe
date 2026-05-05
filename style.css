@@ -1,0 +1,329 @@
+/* --- Reset Básico y Estilos Globales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Fondo muy claro para contraste */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Marcadores de Posición para Iconos (Placeholders) --- */
+.logo-icon-placeholder,
+.service-icon-placeholder {
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.logo-icon-placeholder {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.service-icon-placeholder {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: block; /* Para centrar con margen auto */
+}
+
+/* --- Botones --- */
+.btn-whatsapp, .btn-info {
+    display: inline-block;
+    background-color: #25D366; /* Verde WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-whatsapp:hover, .btn-info:hover {
+    background-color: #1eb855;
+}
+
+.btn-whatsapp i, .btn-info i {
+    margin-right: 10px;
+}
+
+/* --- Sección Hero (Encabezado) --- */
+.hero {
+    background-image: url('./Imagenes/la\ dueña.png'); /* REEMPLAZAR CON TU IMAGEN DE FONDO */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0; /* Mayor relleno para PC */
+    position: relative;
+    z-index: 0;
+    text-align: left;
+    top: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.hero-content {
+    max-width: 50%; /* Ocupa la mitad izquierda en PC */
+    margin-left: 10%; /* Desplazado a la izquierda */
+}
+
+.hero h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.btn-whatsapp {
+    padding: 18px 35px;
+    font-size: 18px;
+}
+
+/* --- Sección de Servicios --- */
+.services {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en PC */
+    gap: 40px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    z-index: 3;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-info {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* --- Sección de Tarifas --- */
+.pricing {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.pricing h2, .testimonials h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.pricing-table th {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: 700;
+    color: #25D366; /* Verde para el precio */
+    text-align: right;
+}
+
+/* --- Sección de Testimonios --- */
+.testimonials {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+.client-name {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+
+.stars {
+    color: #25D366; /* Estrellas verdes */
+    font-size: 16px;
+}
+
+.testimonial-card p {
+    font-size: 17px;
+    font-style: italic;
+    color: #555;
+}
+
+.site-footer {
+    background-color: #0a0a0a; /* Fondo casi negro */
+    color: #ffffff;
+    padding: 50px 0 40px;
+    margin-top: 40px;
+    border-top-left-radius: 15px; /* Pequeño borde redondeado arriba como en el diseño */
+    border-top-right-radius: 15px;
+}
+
+.footer-brand {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo i {
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.footer-brand p {
+    color: #cccccc; /* Texto gris claro para el subtítulo */
+    font-size: 16px;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #333333; /* Línea gris oscura */
+    margin: 30px 0;
+}
+
+.footer-social h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+/* Estilos base para los botones de redes sociales */
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px; /* Cuadros con bordes redondeados */
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px); /* Pequeña animación al pasar el mouse */
+}
+
+/* Colores específicos de cada red social imitando tu diseño */
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+.tiktok {
+    background-color: #202020; /* Gris muy oscuro, casi negro */
+}
