@@ -5,39 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voy Jinotepe - Tus mandados rápidos y seguros</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fuente Google Fonts (similar a Poppins/Roboto) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome para el icono de WhatsApp (referencia rápida) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Sección de Encabezado (Hero) -->
-    <div class="logo">
-        <!-- REFERENCIA PARA ICONO LOGO -->
-        <div class="logo-icon-placeholder"><img src="./Imagenes/voy jinotepe sin fondo original 1.png" alt=""></div> 
-        <h1>Voy Jinotepe</h1>
-    </div>
+    <!-- Sección de Header/Navegación -->
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="logo-section">
+                <div class="logo-icon-placeholder"><img src="./Imagenes/logo.png" alt="Logo"></div>
+                <div>
+                    <h1>Voy Jinotepe</h1>
+                    <p class="tagline">Tus mandados en Carazo</p>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#services" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i> Servicios
+                </a>
+                <a href="#pricing" class="nav-link">
+                    <i class="fas fa-tag"></i> Tarifas
+                </a>
+                <a href="#testimonials" class="nav-link">
+                    <i class="fas fa-star"></i> Clientes
+                </a>
+            </nav>
+
+            <div class="header-info">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>8:00 AM - 9:00 PM</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Carazo</span>
+                </div>
+                <a href="https://wa.me/+50589077314" class="btn-header-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
     <header class="hero">
         
         <div class="hero-content">
             <h2>TUS MANDADOS EN CARAZO,<br>RÁPIDOS Y SEGUROS</h2>
             <p>LLEVAMOS EL SÚPER,<br>LA FARMACIA Y TUS PAGOS<br>HASTA LA PUERTA DE TU<br>CASA. HORARIO DE<br>ATENCIÓN: 8:00 AM A<br>9:00 PM</p>
-            <a href="https://wa.me/TUNUMERODEWHATSAPP" class="btn-whatsapp" target="_blank">
+            <a href="https://wa.me/+50589077314" class="btn-whatsapp" target="_blank">
                 <i class="fab fa-whatsapp"></i> PEDIR POR WHATSAPP
             </a>
         </div>
     </header>
 
     <!-- Sección de Servicios -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <!-- Tarjeta 1 -->
             <div class="card">
                 <!-- REFERENCIA PARA ICONO COMPRAS -->
-                <div class="service-icon-placeholder"><img src="./Imagenes/" alt=""></div>
+                <div class="service-icon-placeholder"><img src="./Imagenes/bags.png" alt=""></div>
                 <h3>COMPRAS DE SUPER</h3>
                 <p>Hacemos tus compras pesadas por ti</p>
                 <a href="#" class="btn-info"><i class="fab fa-whatsapp"></i> Más info</a>
@@ -45,7 +75,7 @@
             <!-- Tarjeta 2 -->
             <div class="card">
                 <!-- REFERENCIA PARA ICONO FARMACIA -->
-                <div class="service-icon-placeholder"></div>
+                <div class="service-icon-placeholder"><img src="./Imagenes/medicine.png" alt=""></div>
                 <h3>FARMACIA Y SALUD</h3>
                 <p>Tus medicinas urgentes en minutos</p>
                 <a href="#" class="btn-info"><i class="fab fa-whatsapp"></i> Más info</a>
@@ -53,16 +83,69 @@
             <!-- Tarjeta 3 -->
             <div class="card">
                 <!-- REFERENCIA PARA ICONO GESTIÓN -->
-                <div class="service-icon-placeholder"></div>
+                <div class="service-icon-placeholder"><img src="./Imagenes/wallet.png" alt=""></div>
                 <h3>GESTIÓN DE PAGOS</h3>
-                <p>Hacemos tus compras pesadas por ti</p>
+                <p>Pagamos tus facturas y servicios por ti</p>
                 <a href="#" class="btn-info"><i class="fab fa-whatsapp"></i> Más info</a>
             </div>
         </div>
     </section>
 
+    <!-- Nueva Sección: Por Qué Elegirnos -->
+    <section class="benefits">
+        <div class="container">
+            <h2>¿POR QUÉ ELEGIR VOY JINOTEPE?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Rápido y Eficiente</h4>
+                    <p>Entregas en menos de 30 minutos en zonas cercanas.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Seguro y Confiable</h4>
+                    <p>Tus pedidos llegan intactos y a tiempo, siempre.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Equipo Profesional</h4>
+                    <p>Mensajeros capacitados y amables en Carazo.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Cobertura Amplia</h4>
+                    <p>Servicio en toda la zona de Carazo y alrededores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Cómo Funciona -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>CÓMO FUNCIONA</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Pide por WhatsApp</h4>
+                    <p>Contacta con nosotros y describe tu pedido.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Confirmamos y Procesamos</h4>
+                    <p>Te confirmamos el precio y tiempo estimado.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Entrega Rápida</h4>
+                    <p>Recibe tu pedido en la puerta de tu casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección de Tarifas -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <h2>TARIFAS TRANSPARENTES Y COMPETITIVAS</h2>
             <table class="pricing-table">
@@ -91,7 +174,7 @@
     </section>
 
     <!-- Sección de Testimonios -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
             
@@ -128,6 +211,34 @@
                 </div>
                 <p>Excelente servicio. Me ahorraron el viaje al banco y al súper. Totalmente recomendado.</p>
             </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="avatar">M</div>
+                    <div>
+                        <span class="client-name">María L</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Siempre puntuales y amables. Han hecho mis compras semanales mucho más fáciles. ¡Gracias!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Llamado a la Acción Final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>¿LISTO PARA HACER TU PEDIDO?</h2>
+            <p>Contacta con nosotros ahora y recibe tu entrega en minutos.</p>
+            <a href="https://wa.me/+50589077314" class="btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> PEDIR AHORA
+            </a>
         </div>
     </section>
 
