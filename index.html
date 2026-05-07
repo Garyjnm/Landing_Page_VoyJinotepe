@@ -231,6 +231,58 @@
         </div>
     </section>
 
+    <section class="user-survey" id="survey">
+    <div class="container">
+        <div class="survey-container">
+            <div class="survey-text">
+                <h2>¿QUÉ NECESITAS HOY?</h2>
+                <p>Queremos brindarte un servicio personalizado. Déjanos tus datos según tus intereses.</p>
+            </div>
+            
+            <form class="main-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Rango de Edad</label>
+                    <select id="edad" name="edad" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="18-25">18 - 25 años</option>
+                        <option value="26-40">26 - 40 años</option>
+                        <option value="41-60">41 - 60 años</option>
+                        <option value="60+">Más de 60 años</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="intereses">¿Qué servicio te interesa más?</label>
+                    <select id="intereses" name="intereses" required>
+                        <option value="" disabled selected>Selecciona un servicio</option>
+                        <option value="super">Compras de Súper</option>
+                        <option value="farmacia">Farmacia y Salud</option>
+                        <option value="pagos">Gestión de Pagos</option>
+                        <option value="otros">Otros mandados rápidos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="intencion">¿Cuándo planeas hacer tu próximo pedido?</label>
+                    <select id="intencion" name="intencion" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="hoy">¡Hoy mismo!</option>
+                        <option value="semana">Esta semana</option>
+                        <option value="ocasional">Solo cuando lo necesite</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
     <!-- Nueva Sección: Llamado a la Acción Final -->
     <section class="cta-final">
         <div class="container">
