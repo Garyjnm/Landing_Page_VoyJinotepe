@@ -821,14 +821,20 @@ body {
     }
 
     .hero {
-        margin-top: 0;
-        padding: 30px 0 100px;
-        text-align: center;
+        /* background-attachment: scroll;  */
+        background-position: 70% top; /* Desplaza la imagen hacia la derecha */
+        background-attachment: scroll; /* Fixed no funciona bien en móvil */
+        min-height: 100vh;
+        align-items: flex-end; /* Mueve el texto hacia abajo */
+        padding-bottom: 60px;
     }
 
     .hero-content {
+        background: rgba(0, 0, 0, 0.45); /* Fondo semitransparente detrás del texto */
+        padding: 20px;
+        border-radius: 15px;
         max-width: 100%;
-        margin-left: 0;
+        margin: 0 15px;
     }
 
     .hero h2 {
