@@ -9,9 +9,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K9H5ZM2K');</script>
 <!-- End Google Tag Manager -->
  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/99b01a739263fd9b339fc2fbf/d9aeea361acee05e870ec3c09.js");</script>
-<!-- Start of HubSpot Embed Code -->
+
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/51553980.js"></script>
-<!-- End of HubSpot Embed Code -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voy Jinotepe - Tus mandados rápidos y seguros</title>
@@ -297,6 +297,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </select>
                 </div>
 
+                <!-- CAMBIO NUEVO: Pregunta del cupón -->
+                <div class="form-group">
+                    <label for="tieneCupon">¿Tienes un cupón de descuento?</label>
+                    <select id="tieneCupon" name="tieneCupon" required>
+                        <option value="no" selected>No</option>
+                        <option value="si">Sí</option>
+                    </select>
+                </div>
+
+                <!-- CAMBIO NUEVO: Campo oculto para ingresar el código -->
+                <div class="form-group" id="contenedor-cupon" style="display: none;">
+                    <label for="codigoCupon">Ingresa tu cupón</label>
+                    <input type="text" id="codigoCupon" name="codigoCupon" placeholder="Ej. VOYJINOTEPE20">
+                </div>
+
                 <button type="submit" class="btn-submit">ENVIAR</button>
             </form>
         </div>
@@ -314,6 +329,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
+    <!-- SCRIPT NUEVO: Lógica para mostrar/ocultar el input del cupón -->
+    <script>
+        document.getElementById('tieneCupon').addEventListener('change', function() {
+            var contenedorCupon = document.getElementById('contenedor-cupon');
+            var inputCupon = document.getElementById('codigoCupon');
+            
+            if (this.value === 'si') {
+                contenedorCupon.style.display = 'block';
+                inputCupon.setAttribute('required', 'required'); // Hace que sea obligatorio si marca 'Sí'
+            } else {
+                contenedorCupon.style.display = 'none';
+                inputCupon.removeAttribute('required'); // Quita la obligatoriedad si cambia a 'No'
+                inputCupon.value = ''; // Limpia el texto por si acaso
+            }
+        });
+    </script>
 </body>
 
 <footer class="site-footer">
